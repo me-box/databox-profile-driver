@@ -1,0 +1,27 @@
+{
+    "manifest-version": 1,
+    "name": "driver-profile",
+    "version": "0.4.0",
+    "description": "A Databox driver to store a user's profile data",
+    "author": "Tom Lodge <Thomas.Lodge@nottingham.ac.uk> ()",
+    "license": "MIT",
+    "databox-type": "driver",
+    "tags": [
+        "store",
+        "blob",
+        "db",
+        "native",
+        "json"
+    ],
+    "homepage": "https://github.com/tlodge/databox-profile-driver",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tlodge/databox-profile-driver.git"
+    },
+    "network-permissions": [],
+    "external-whitelist": [],
+    "hardware-permissions": [],
+    "resource-requirements": {
+        "store": "core-store"
+    }
+}
