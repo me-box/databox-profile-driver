@@ -13,10 +13,10 @@
         "native",
         "json"
     ],
-    "homepage": "https://github.com/tlodge/databox-profile-driver",
+    "homepage": "https://github.com/me-box/databox-profile-driver",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tlodge/databox-profile-driver.git"
+        "url": "git+https://github.com/me-box/databox-profile-driver.git"
     },
     "network-permissions": [],
     "external-whitelist": [],
