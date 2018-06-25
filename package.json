@@ -9,10 +9,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf ./src/server/www && mv build ./src/server/www",
+    "build": "react-scripts build && rm -rf ./src/server/www/ui && mv build/static/ ./src/server/www/ui",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "docker": "docker build --no-cache -t databox-profile-driver ."
+    "docker": "docker build  -t databox-profile-driver .",
+    "tag": "docker tag databox-profile-driver databox-profile-driver:0.4.0",
+    "deploy": "npm run docker && npm run tag"
   },
   "devDependencies": {
     "webpack": "^4.12.1"

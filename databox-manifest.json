@@ -1,6 +1,6 @@
 {
     "manifest-version": 1,
-    "name": "driver-profile",
+    "name": "databox-profile-driver",
     "version": "0.4.0",
     "description": "A Databox driver to store a user's profile data",
     "author": "Tom Lodge <Thomas.Lodge@nottingham.ac.uk> ()",

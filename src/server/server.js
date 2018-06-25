@@ -26,11 +26,20 @@ kvc.RegisterDatasource(profileAge).then(() => {
     console.log("registered driver data source!!");
 })
 
-console.log("[Creating server]");
+console.log("[NOW Creating https server]", PORT);
 const app = express();
+
+app.set('views', './views');
+app.set('view engine', 'html');
+app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/ui', express.static('./www'));
-app.use('/static', express.static('./www/static'));
+
+app.use('/', express.static('./www'));
+
+app.get('/ui', (req, res) => {
+    console.log("in ui endpoint!!");
+    res.render('index');
+});
 
 app.get("/status", function (req, res) {
     res.send("active");
